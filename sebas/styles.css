@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #698aff;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff4500;
+}
+
+.video-container {
+    margin: 20px 0;
+}
+
+.image-frame {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 5px solid #0e2ee2; /* Borde del marco */
+}
+
+.decor-image {
+    position: absolute;
+    width: 25%; /* Ajustar tamaño de las imágenes */
+    top: 15px; /* Ajustar posición */
+    transition: transform 0.3s;
+}
+
+.decor-image:last-of-type {
+    right: 15px; /* Posicionamiento de la segunda imagen */
+}
+
+.decor-image:first-of-type {
+    left: 15px; /* Posicionamiento de la primera imagen */
+}
+
+video {
+    width: 100%; /* Hacer que el video sea responsivo */
+    border-radius: 10px; /* Bordes redondeados del video */
+}
+
+button {
+    background-color: #0e1ded;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff6a14;
+}
+
+@media (max-width: 600px) {
+    .decor-image {
+        width: 15%; /* Ajustar tamaño de las imágenes en pantallas pequeñas */
+    }
+}
